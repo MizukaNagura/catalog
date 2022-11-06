@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+      <link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
+    <title>Hello, world!</title>
+
+    
+      <style>body {
+        font-family: 'Potta One', cursive;
+      }</style>
+    
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark mb-3">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1">おたすけちゃん【掲示板】</span>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col">  
+                <div class="mb-3">
+                    <label for="symptoms" class="form-label">気になる症状</label>
+                    <select class="form-select" id="symptoms" aria-label="Default select example">
+
+                        <option selected>頭痛</option>
+                        <option value="1">眼精疲労</option>
+                        <option value="2">首・肩こり</option>
+                        <option value="3">腰痛</option>
+                      </select>
+                </div>
+            </div>
+            <div class="col">  
+                <div class="mb-3">
+                    <label for="keyword" class="form-label">キーワード</label>
+                    <input type="text" class="form-control" id="keyword" placeholder="">
+                </div>
+          </div>
+            <div class="row">
+                <div class="col d-flex flex-row-reverse">
+                    <button type="button" class="btn btn-primary">新規</button>
+                    <button type="button" class="btn btn-danger ms-1 me-1">削除</button>
+                    <button type="button" class="btn btn-success">検索</button>
+                </div>
+            </div>
+            <div class="row”>
+                <div class="col">
+                    <table class="table table-striped table-hover mb-3">
+                        <thead>
+                          <tr>
+                            <th scope="col">NO.</th>
+                            <th scope="col">しんどい症状</th>
+                            <th scope="col">経穴</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>頭痛</td>
+                            <td>完骨</td>                          
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </body>
+</html>
