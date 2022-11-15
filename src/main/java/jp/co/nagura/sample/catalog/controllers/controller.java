@@ -49,7 +49,7 @@ public class controller {
         model.addAttribute("animals", animals);
         model.addAttribute("lists", lists);
 
-        log.info("lists:{}", lists); // ログ出力する
+        log.debug("lists:{}", lists); // ログ出力する
 
         return "list";
     }
