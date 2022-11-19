@@ -1,4 +1,4 @@
-package jp.co.nagura.sample.catalog.bean;
+package jp.co.nagura.sample.catalog.mappers.beans;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
